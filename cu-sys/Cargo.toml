@@ -1,0 +1,17 @@
+[package]
+name = "cu-sys"
+version = "0.1.0"
+authors = ["Michal Hornický <semtexzv@gmail.com>"]
+description = "Low level bindings to cuda apis"
+documentation = "https://docs.rs/cu-sys"
+repository = "https://github.com/semtexzv/cu"
+homepage = "https://github.com/semtexzv/cu"
+license = "MIT/Apache-2.0"
+keywords = ["cuda", "gpu", "gpgpu"]
+categories = ["api-bindings", "external-ffi-bindings", "asynchronous", "science"]
+
+[dependencies]
+libc="0.2"
+
+[build-dependencies]
+gcc="0.3"

@@ -1,0 +1,17 @@
+[package]
+name = "cu-core"
+version = "0.1.0"
+authors = ["Michal Hornický <semtexzv@gmail.com>"]
+description = "Low level bindings to cuda apis"
+documentation = "https://docs.rs/cu-core"
+repository = "https://github.com/semtexzv/cu"
+homepage = "https://github.com/semtexzv/cu"
+license = "MIT/Apache-2.0"
+keywords = ["cuda", "gpu", "gpgpu"]
+categories = ["api-bindings", "external-ffi-bindings", "asynchronous", "science"]
+
+[dependencies]
+libc="0.2"
+bitflags= "1.1.0"
+error-chain = "0.12.1"
+cu-sys = "0.1.0"

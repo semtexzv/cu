@@ -1,0 +1,2 @@
+[workspace]
+members = ["cu-sys", "cu-core", "cu"]
