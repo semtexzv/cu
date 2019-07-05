@@ -14,4 +14,4 @@ categories = ["api-bindings", "external-ffi-bindings", "asynchronous", "science"
 libc="0.2"
 
 [build-dependencies]
-gcc="0.3"
+cc="1.0"

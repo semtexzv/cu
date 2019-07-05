@@ -12,4 +12,4 @@ categories = ["api-bindings", "external-ffi-bindings", "asynchronous", "science"
 
 [dependencies]
 num = "0.1"
-cu-core =  "0.1.0"
+cu-core =  { version = "0.1.0", path = "../cu-core" }

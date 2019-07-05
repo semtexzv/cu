@@ -14,4 +14,4 @@ categories = ["api-bindings", "external-ffi-bindings", "asynchronous", "science"
 libc="0.2"
 bitflags= "1.1.0"
 error-chain = "0.12.1"
-cu-sys = "0.1.0"
+cu-sys =  { version = "0.1.0", path = "../cu-sys" }

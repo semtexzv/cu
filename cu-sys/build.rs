@@ -1,4 +1,4 @@
-extern crate gcc;
+extern crate cc;
 fn main() {
 
     println!("cargo:rerun-if-changed=build.rs");
@@ -9,13 +9,14 @@ fn main() {
     println!(r"cargo:rustc-link-search=/opt/cuda/lib64/");
     println!(r"cargo:rustc-link-search=/usr/local/cuda/lib64");
 
-    let mut config = gcc::Build::new();
+    let mut config = cc::Build::new();
 
     config
         .include("native/")
-        .include(r"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include")
-        .include(r"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include")
+        .include(r"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include")
         .include(r"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include")
+        .include(r"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include")
+        .include(r"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include")
         .include(r"/opt/cuda/include/")
         .cpp(true)
         .file("native/wrap.cpp")

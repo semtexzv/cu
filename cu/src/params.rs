@@ -23,7 +23,6 @@ use buffer::Buffer;
 impl<T: CudaVal> KernelParam for Buffer<T> {
     fn as_kernel_ptr(&self) -> *const ::std::os::raw::c_void {
         unsafe {
-            // Error was here
             return self.dev_ptr_ref() as *const u64 as *const ::std::os::raw::c_void;
         }
     }
