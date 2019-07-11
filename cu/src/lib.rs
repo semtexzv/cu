@@ -32,3 +32,8 @@ pub use buffer::Buffer;
 pub use device::*;
 pub use context::*;
 pub use stream::*;
+
+
+pub fn init() -> core::Result<()> {
+    core::init()
+}
